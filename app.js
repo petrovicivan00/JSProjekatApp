@@ -1,8 +1,8 @@
-import express from "express";
-import cors from "cors";
-import history from "connect-history-api-fallback";
-import routes from "./routes/routes.js";
-import path from "path";
+const express = require("express");
+const cors = require ("cors");
+const routes = require("./routes/routes.js");
+const history = require("connect-history-api-fallback");
+const path = require("path");
 
 const __dirname = path.resolve();
 
