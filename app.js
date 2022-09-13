@@ -22,6 +22,6 @@ const client = express.static(path.join(__dirname, 'dist'));
 app.use(history({ index: '/index.html' }));
 app.use(client);
 */
-app.listen( process.env.PORT | 4000, () => {
+app.listen( process.env.PORT || 4000, () => {
     console.log("Backend server is running on port " + process.env.PORT);
 });
