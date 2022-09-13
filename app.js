@@ -4,8 +4,6 @@ const routes = require("./routes/routes.js");
 const history = require("connect-history-api-fallback");
 const path = require("path");
 
-const __dirname = path.resolve();
-
 const app = express();
 
 app.use(express.json({ limit: "30mb", extended: true }));
