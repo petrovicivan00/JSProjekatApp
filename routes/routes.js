@@ -1,9 +1,8 @@
-import express from "express";
-import dotenv from "dotenv";
-
-dotenv.config();
-
+const express = require("express");
 const router = express.Router();
+
+const dotenv = require("dotenv");
+dotenv.config();
 
 router.get("/", (req, res) => {
   res.sendFile("index.html", { root: "./static" });
@@ -33,4 +32,4 @@ router.get("/users", (req, res) => {
   res.sendFile("models/users/users.html", { root: "./static" });
 });
 
-export default router;
+module.exports = router;
