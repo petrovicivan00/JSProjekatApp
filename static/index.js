@@ -24,7 +24,7 @@ window.onload = function () {
         return;
       }
       const token = localStorage.getItem("token");
-      fetch("http://localhost:3000/api/users", {
+      fetch("https://movieapp-db.herokuapp.com/api/users", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ window.onload = function () {
           return;
         }
         const token = JSON.parse(localStorage.getItem("token"));
-        fetch("http://localhost:3000/api/movies", {
+        fetch("https://movieapp-db.herokuapp.com/api/movies", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -69,7 +69,7 @@ window.onload = function () {
             return;
           }
           const token = JSON.parse(localStorage.getItem("token"));
-          fetch("http://localhost:3000/api/shows", {
+          fetch("https://movieapp-db.herokuapp.com/api/shows", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
@@ -95,7 +95,7 @@ window.onload = function () {
             return;
           }
           const token = JSON.parse(localStorage.getItem("token"));
-          fetch("http://localhost:3000/api/animes", {
+          fetch("https://movieapp-db.herokuapp.com/api/animes", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
@@ -120,7 +120,7 @@ window.onload = function () {
             return;
           }
           const token = JSON.parse(localStorage.getItem("token"));
-          fetch("http://localhost:3000/api/standups", {
+          fetch("https://movieapp-db.herokuapp.com/api/standups", {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
