@@ -21,7 +21,7 @@ button.onclick = function () {
       return false;
   }
   
-  fetch("http://localhost:2000/auth/login", {
+  fetch("https://movieapp-auth.herokuapp.com/auth/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(parameters),
